@@ -16,6 +16,19 @@
 
 DEVICE_PATH := device/oplus/RM3686
 
+# A/B
+AB_OTA_UPDATER := true
+BOARD_USES_RECOVERY_AS_BOOT := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
+
+AB_OTA_PARTITIONS := \
+    boot \
+    dtbo \
+    system \
+    product \
+    vendor \
+    vbmeta
+
 # Inherit from oplus mt6877-common
 include device/oplus/mt6877-common/BoardConfigCommon.mk
 
